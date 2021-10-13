@@ -1,0 +1,38 @@
+# action.yml
+name: 'AnyBody - Run Simulation'
+description: 'Run simulations with the AnyBody Modeling System as part of a Github actions flow'
+inputs:
+  license_server:
+    description: 'The URL/IP of the floating license server'
+    required: true
+    default: 104.46.46.229
+  license_server_port:
+    description: 'The port on the floating license server'
+    required: false
+    default: 5053
+  license_server_password:
+    description: 'The password for the floating license server'
+    required: true
+    default: 1234
+  run:
+    description: 'the commands to run'
+    required: false
+    default: "echo 'hello world'"
+  shell:
+    description: 'The shell used to run the commands (e.g. /bin/bash, python)'
+    required: false
+    default: /bin/bash
+
+outputs:
+  anybody_version: # id of output
+    description: 'The version of AnyBody used'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.license_server_port }}
+    - ${{ inputs.license_server }}
+    - ${{ inputs.license_server_password }}
+    - ${{ inputs.run }}
+    - ${{ inputs.shell }}
+    
