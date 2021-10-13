@@ -1,6 +1,8 @@
 # action.yml
 name: 'AnyBody - Run Simulation'
 description: 'Run simulations with the AnyBody Modeling System as part of a Github actions flow'
+
+author: Morten Enemark Lund
 inputs:
   license_server:
     description: 'The URL/IP of the floating license server'
@@ -35,4 +37,7 @@ runs:
     - ${{ inputs.license_server_password }}
     - ${{ inputs.run }}
     - ${{ inputs.shell }}
-    
+
+branding:
+  icon: 'box'  
+  color: 'red'
