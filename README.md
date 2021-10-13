@@ -1,10 +1,11 @@
-# Run AnyBody Simulation with GitHub actions
+# Run AnyBody on GitHub actions
 
-This actions enables simulations with the console version of the AnyBody Modeling System as part of GitHub action flow. The simualtion runs in a linux docker image with AnyBody preinstalled.
+This actions enables simulations with the console version of the AnyBody Modeling System as part of a GitHub action flow. Behind the scenes the simualtion runs in a [linux docker image)[https://github.com/AnyBody/anybody-container/pkgs/container/anybodycon-linux] with AnyBody preinstalled.
 
 > **Note:** A valid license is necessary for this action to work. I.e. you must provide a floating license server where the action can obtain a license while it is running. 
 
-Currently the action uses version `7.3.4` of the AnyBody Modeling System available as a [linux docker container](https://github.com/AnyBody/anybody-container/pkgs/container/anybodycon-linux). 
+Currently the action uses version `7.3.4` of the AnyBody Modeling System available as a [linux docker container](https://github.com/AnyBody/anybody-container/pkgs/container/anybodycon-linux).
+
 
 ## Inputs
 
@@ -47,3 +48,11 @@ with:
   run: 
     anybodycon -m macro.anymcr
 ```
+
+## Alternatives:
+
+An alternative to this action is to just specify the following in the job workflow:
+  
+```container: ghcr.io/anybody/anybodycon-linux:latest```
+ 
+But that will run the all job steps in the docker image and prevent the use of other docker-based actions. 
