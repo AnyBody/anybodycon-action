@@ -35,8 +35,8 @@ runs:
     - ${{ inputs.license_server_port }}
     - ${{ inputs.license_server }}
     - ${{ inputs.license_server_password }}
-    - ${{ inputs.run }}
     - ${{ inputs.shell }}
+    - ${{ inputs.run }}
 
 branding:
   icon: 'box'  
