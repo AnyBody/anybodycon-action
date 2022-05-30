@@ -1,6 +1,6 @@
 # Run AnyBody on GitHub actions
 
-This actions enables simulations with the console version of the AnyBody Modeling System as part of a GitHub action flow. Behind the scenes the simualtion runs in a [linux docker image)[https://github.com/AnyBody/anybody-container/pkgs/container/anybodycon-linux] with AnyBody preinstalled.
+This actions enables simulations with the console version of the AnyBody Modeling System as part of a GitHub action flow. Behind the scenes the simualtion runs in a [linux docker image](https://github.com/AnyBody/anybody-container/pkgs/container/anybodycon-linux) with AnyBody preinstalled.
 
 > **Note:** A valid license is necessary for this action to work. I.e. you must provide a floating license server where the action can obtain a license while it is running. 
 
