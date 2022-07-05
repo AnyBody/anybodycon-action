@@ -9,12 +9,12 @@ Currently the action uses version `7.4.1` of the AnyBody Modeling System availab
 
 ## Inputs
 
-## `run`
+### `run`
 
 **Required** The commands start the anybody simulation. For example launching anybody directly `anybodycon -m macro.anymcr` or maybe a python script which runs your simualtion: `python my-simulation.py` 
 
 
-## `license_server`
+### `license_server`
 
 **Required** the ip/url of the AnyBody license server.
 
@@ -22,23 +22,23 @@ Currently the action uses version `7.4.1` of the AnyBody Modeling System availab
 
 **Required** The password for accessing the license server. Use the github  action system for [encrypted secrets(https://docs.github.com/en/actions/security-guides/encrypted-secrets) (e.g. `${{ secrets.server_password }}`)
 
-## `license_server_port`
+### `license_server_port`
 
 **Optional** The port where the license server is hosted. Defaults to 5053.
 
 
-## `license_server_port`
+### `license_server_port`
 
 **Optional** The shell used to execute the `run` script. Defaults to `/bin/bash`.
 
 
 ## Outputs
 
-## `anybody_version`
+### `anybody_version`
 
 The exeact version of AnyBody used by the action.
 
-## Example usage
+### Example usage
 
 ```
 uses: anybody/anybodycon-action@7.3.4
