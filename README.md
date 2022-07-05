@@ -18,7 +18,7 @@ Currently the action uses version `7.4.1` of the AnyBody Modeling System availab
 
 **Required** the ip/url of the AnyBody license server.
 
-## `license_server_pass`
+### `license_server_pass`
 
 **Required** The password for accessing the license server. Use the github  action system for [encrypted secrets(https://docs.github.com/en/actions/security-guides/encrypted-secrets) (e.g. `${{ secrets.server_password }}`)
 
@@ -38,7 +38,7 @@ Currently the action uses version `7.4.1` of the AnyBody Modeling System availab
 
 The exeact version of AnyBody used by the action.
 
-### Example usage
+## Example usage
 
 ```
 uses: anybody/anybodycon-action@7.3.4
