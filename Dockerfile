@@ -5,4 +5,4 @@ FROM ghcr.io/anybody/anybodycon-linux:7.4.1-0
 COPY entrypoint.sh /entrypoint.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT [["/usr/local/bin/_entrypoint.sh", "/entrypoint.sh"]
