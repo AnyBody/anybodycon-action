@@ -11,6 +11,10 @@ export WINEPREFIX=/rootwine
 echo -e "$5" > _action_run_script
 
 version=$(python -c "import anypytools;print(anypytools.tools.anybodycon_version().partition(' (')[0].replace(' ', ''))" 2> /dev/null)
+ams_path=$(python -c "import anypytools;print(anypytools.tools.get_anybodycon_path())" 2> /dev/null)
+echo $ams_path
+echo $version
+
 echo "::set-output name=anybody_version::$version"
 
 # Echo user name and group id
@@ -18,6 +22,10 @@ echo "User name: $(id -un)"
 echo "User id: $(id -u)"
 echo "Group name: $(id -gn)"
 echo "Group id: $(id -g)"
+
+cat /usr/bin/anybodycon
+
+
 
 
 $RUN_SHELL _action_run_script
