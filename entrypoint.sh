@@ -6,6 +6,7 @@ export RLM_LICENSE=$1@$2
 export RLM_LICENSE_PASSWORD=$3
 export RUN_SHELL=$4
 
+export WINEPREFIX=/rootwine
 
 echo -e "$5" > _action_run_script
 
