@@ -41,7 +41,7 @@ The exeact version of AnyBody used by the action.
 ## Example usage
 
 ```
-uses: anybody/anybodycon-action@7.3.4
+uses: anybody/anybodycon-action@v7.4.3
 with:
   license_server: license-server.com
   license_server_password: ${{ secrets.server_password }}
