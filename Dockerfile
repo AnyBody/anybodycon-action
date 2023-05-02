@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM ghcr.io/anybody/anybodycon-linux:7.5_beta
+FROM ghcr.io/anybody/anybodycon-github-action:7.5_beta
 
 # Docker actions must be run with root as the default user
 USER root
