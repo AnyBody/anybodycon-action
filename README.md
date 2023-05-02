@@ -4,7 +4,7 @@ This actions enables simulations with the console version of the AnyBody Modelin
 
 > **Note:** A valid license is necessary for this action to work. I.e. you must provide a floating license server where the action can obtain a license while it is running. 
 
-Currently the action uses version `7.4.1` of the AnyBody Modeling System available as a [linux docker container](https://github.com/AnyBody/anybody-container/pkgs/container/anybodycon-linux).
+Currently the action uses version `7.4.4` of the AnyBody Modeling System available as a [linux docker container](https://github.com/AnyBody/anybody-container/pkgs/container/anybodycon).
 
 
 ## Inputs
